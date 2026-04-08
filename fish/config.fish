@@ -14,3 +14,5 @@ fish_add_path ~/.bun/bin
 fish_add_path ~/.local/bin
 
 set -x GPG_TTY (tty)
+
+source "$HOME/.cargo/env.fish"
