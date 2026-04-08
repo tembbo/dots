@@ -1,6 +1,6 @@
 [user]
-    name = tembbo
-    email = m@tembbo.com
+	name = tembbo
+	email = m@tembbo.com
 	signingkey = 0755A028C285E53E
 
 [alias]
