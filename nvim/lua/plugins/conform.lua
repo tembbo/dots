@@ -22,10 +22,10 @@ return {
 			}
 		end,
 		formatters_by_ft = {
-			javascript = { "oxfmt" },
-			typescript = { "oxfmt" },
-			typescriptreact = { "oxfmt" },
-			json = { "oxfmt" },
+			javascript = { "prettier" },
+			typescript = { "prettier" },
+			typescriptreact = { "prettier" },
+			json = { "prettier" },
 			lua = { "stylua" },
 		},
 	},

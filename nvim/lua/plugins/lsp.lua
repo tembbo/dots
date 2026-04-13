@@ -92,7 +92,7 @@ return {
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 		local servers = {
-			oxlint = {},
+			ts_ls = {},
 			zls = {},
 			tailwindcss = {},
 			fish_lsp = {},
