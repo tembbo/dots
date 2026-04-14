@@ -28,6 +28,7 @@ return {
 			json = { "prettier" },
 			lua = { "stylua" },
 			html = { "prettier" },
+			css = { "prettier" },
 		},
 	},
 }
