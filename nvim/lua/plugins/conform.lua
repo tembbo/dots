@@ -27,6 +27,7 @@ return {
 			typescriptreact = { "prettier" },
 			json = { "prettier" },
 			lua = { "stylua" },
+			html = { "prettier" },
 		},
 	},
 }
