@@ -32,8 +32,3 @@ staged = "​"
 renamed = "​"
 deleted = "​"
 stashed = "≡"
-
-# [custom.jj]
-# when = "jj-starship detect"
-# shell = ["jj-starship", "--no-jj-prefix", "--no-git-prefix"]
-# format = "$output "
