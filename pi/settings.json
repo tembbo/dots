@@ -1,0 +1,10 @@
+{
+  "lastChangelogVersion": "0.72.1",
+  "defaultProvider": "opencode",
+  "defaultModel": "minimax-m2.5-free",
+  "defaultThinkingLevel": "medium",
+  "terminal": {
+    "showTerminalProgress": true
+  },
+  "theme": "dark"
+}
