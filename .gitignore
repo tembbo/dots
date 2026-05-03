@@ -1,4 +1,6 @@
 .DS_Store
 fish/fish_variables
+
 pi/auth.json
 pi/sessions/
+pi/bin/
