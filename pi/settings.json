@@ -2,9 +2,10 @@
   "lastChangelogVersion": "0.72.1",
   "defaultProvider": "opencode",
   "defaultModel": "minimax-m2.5-free",
-  "defaultThinkingLevel": "medium",
+  "defaultThinkingLevel": "high",
   "terminal": {
     "showTerminalProgress": true
   },
   "theme": "dark"
 }
+
