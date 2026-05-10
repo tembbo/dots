@@ -8,11 +8,9 @@
 	c = commit
 	a = add
 	p = push
-	l = log --graph --decorate --oneline
 	k = checkout
 	m = switch
 	b = branch
-	t = log --tags --decorate --simplify-by-decoration --oneline
 
 [init]
 	defaultBranch = main
