@@ -11,6 +11,7 @@
 	k = checkout
 	m = switch
 	b = branch
+	nuke = "!git add --all && git stash && git stash clear"
 
 [init]
 	defaultBranch = main
