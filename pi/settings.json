@@ -1,11 +1,10 @@
 {
-  "lastChangelogVersion": "0.78.0",
+  "lastChangelogVersion": "0.78.1",
   "defaultProvider": "opencode",
-  "defaultModel": "big-pickle",
+  "defaultModel": "minimax-m3-free",
   "defaultThinkingLevel": "high",
   "terminal": {
     "showTerminalProgress": true
   },
   "theme": "dark"
 }
-
