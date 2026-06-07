@@ -2,3 +2,5 @@ theme = Catppuccin Mocha
 
 auto-update-channel = tip
 macos-option-as-alt = true
+
+keybind = super+p=new_split:auto
