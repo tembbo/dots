@@ -16,5 +16,7 @@ fish_add_path ~/.local/bin/zig-aarch64-macos-0.17.0-dev.44+0177cb57c
 
 set -x GPG_TTY (tty)
 
+bind ctrl-f accept-autosuggestion
+
 # opencode
 fish_add_path /Users/emil/.opencode/bin
