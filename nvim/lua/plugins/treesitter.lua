@@ -1,68 +1,49 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
-	branch = "main",
-	event = { "BufReadPost", "BufNewFile" },
-	build = function()
-		require("nvim-treesitter").update()
-	end,
-	opts = {
-		ensure_installed = {
-			"bash",
-			"css",
-			"html",
-			"javascript",
-			"typescript",
-			"json",
-			"lua",
-			"markdown",
-			"markdown_inline",
-			"svelte",
-			"vimdoc",
-			"zig",
+	{
+		"nvim-treesitter/nvim-treesitter",
+		branch = "main",
+		version = false,
+		build = ":TSUpdate",
+		event = { "BufReadPost", "BufNewFile" },
+		cmd = { "TSUpdate", "TSInstall", "TSLog", "TSUninstall" },
+		opts = {
+			ensure_installed = {
+				"bash",
+				"css",
+				"html",
+				"javascript",
+				"typescript",
+				"json",
+				"lua",
+				"markdown",
+				"markdown_inline",
+				"query",
+				"svelte",
+				"vim",
+				"vimdoc",
+				"zig",
+			},
+			auto_install = true,
 		},
-		auto_install = true,
-		highlight = {
-			enable = true,
-		},
-		indent = {
-			enable = true,
-		},
-	},
-	config = function(_, opts)
-		require("nvim-treesitter").setup(opts)
-	end,
-}
+		config = function(_, opts)
+			local ts = require("nvim-treesitter")
+			ts.setup(opts)
 
--- return {
--- 	"nvim-treesitter/nvim-treesitter",
--- 	branch = "main",
--- 	event = { "BufEnter" },
--- 	build = function()
--- 		require("nvim-treesitter.install").update({ with_sync = true })
--- 	end,
--- 	config = function()
--- 		---@diagnostic disable: missing-fields
--- 		require("nvim-treesitter.configs").setup({
--- 			ensure_installed = {
--- 				"bash",
--- 				"css",
--- 				"html",
--- 				"javascript",
--- 				"json",
--- 				"lua",
--- 				"markdown",
--- 				"markdown_inline",
--- 				"svelte",
--- 				"vimdoc",
--- 				"zig",
--- 			},
--- 			auto_install = true,
--- 			highlight = {
--- 				enable = true,
--- 			},
--- 			indent = {
--- 				enable = true,
--- 			},
--- 		})
--- 	end,
--- }
+			vim.api.nvim_create_autocmd("FileType", {
+				group = vim.api.nvim_create_augroup("my_treesitter_start", {
+					clear = true,
+				}),
+				callback = function(ev)
+					pcall(vim.treesitter.start, ev.buf)
+					vim.bo[ev.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+				end,
+			})
+		end,
+	},
+
+	{
+		"windwp/nvim-ts-autotag",
+		event = { "BufReadPost", "BufNewFile" },
+		opts = {},
+	},
+}
