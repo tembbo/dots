@@ -10,6 +10,7 @@ alias oc opencode
 
 set -e fish_user_paths
 fish_add_path /opt/homebrew/bin
+fish_add_path /opt/homebrew/sbin
 fish_add_path ~/.bun/bin
 fish_add_path ~/.local/bin
 fish_add_path ~/.local/bin/zig-aarch64-macos-0.16.0
