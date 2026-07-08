@@ -1,4 +1,5 @@
-theme = Catppuccin Mocha
+theme = Vesper
+# theme = Solarized Osaka Night
 
 auto-update-channel = tip
 macos-option-as-alt = true
