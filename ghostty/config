@@ -1,7 +1,4 @@
-theme = Vesper
-# theme = Solarized Osaka Night
-
+theme = vesper
+shell-integration = fish
 auto-update-channel = tip
 macos-option-as-alt = true
-
-keybind = super+p=new_split:auto
