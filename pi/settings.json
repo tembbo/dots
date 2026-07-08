@@ -1,10 +1,11 @@
 {
   "lastChangelogVersion": "0.78.1",
   "defaultProvider": "opencode",
-  "defaultModel": "minimax-m3-free",
-  "defaultThinkingLevel": "high",
+  "defaultModel": "deepseek-v4-flash-free",
+  "defaultThinkingLevel": "xhigh",
   "terminal": {
     "showTerminalProgress": true
   },
   "theme": "dark"
 }
+
