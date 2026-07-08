@@ -7,12 +7,12 @@ These are my personal dotfiles. I've tried to keep things fairly straightforward
 This requires [Gnu stow](https://www.gnu.org/software/stow/)
 
 ```sh
-git clone https://github.com/tembbo/dot ~/.dot
-cd ~/.dot
+git clone https://github.com/tembbo/dots ~/.dots
+cd ~/.dots
 stow .
 ```
 
-This creates symlinks from your `~/.config` directory into `~/.dot`.
+This creates symlinks from your `~/.config` directory into `~/.dots`.
 
 ## Stack
 
