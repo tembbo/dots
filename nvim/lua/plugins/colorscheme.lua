@@ -1,7 +1,6 @@
 return {
-	"catppuccin/nvim",
-	name = "catppuccin",
+	"nexxeln/vesper.nvim",
 	config = function()
-		vim.cmd.colorscheme("catppuccin")
+		vim.cmd.colorscheme("vesper")
 	end,
 }
