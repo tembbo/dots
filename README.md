@@ -1,5 +1,7 @@
 # dotfiles
 
+![Screenshot](.github/screenshot.png)
+
 These are my personal dotfiles. I've tried to keep things fairly straightforward, but if you wish to copy from this, you'll likely need to tweak some things to fit your own machine.
 
 ## Setup
