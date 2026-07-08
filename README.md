@@ -12,7 +12,7 @@ cd ~/.dots
 stow .
 ```
 
-This creates symlinks from your `~/.config` directory into `~/.dots`.
+This creates symlinks from your `~/.config` directory into `~/.dots`. You'll likely run into conflicts with existing files in `~/.config` and need to choose which ones to keep.
 
 ## Stack
 
