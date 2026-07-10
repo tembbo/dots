@@ -25,6 +25,8 @@ return {
 			css = { "prettier" },
 			markdown = { "prettier" },
 			lua = { "stylua" },
+			sh = { "shfmt" },
+			bash = { "shfmt" },
 		},
 		format_on_save = function()
 			return {
