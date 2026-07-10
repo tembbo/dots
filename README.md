@@ -6,12 +6,14 @@ These are my personal dotfiles. I've tried to keep things fairly straightforward
 
 ## Setup
 
-Requires [Gnu stow](https://www.gnu.org/software/stow/)
+The bootstrap script installs stow, clones/updates the repository and creates symlinks for the configuration files in `~/.config`. This will not install the configured programs.
 
 ```sh
-git clone https://github.com/tembbo/dots ~/.dots
-cd ~/.dots
-stow .
+curl -fsSL https://raw.githubusercontent.com/tembbo/dots/main/bootstrap.sh | bash
 ```
 
-Running `stow .` creates symlinks from `~/.config` to the files in `~/.dots`. If you already have files in `~/.config`, you may run into conflicts and need to choose which versions to keep.
+You can also run the script locally:
+
+```sh
+bash scripts/bootstrap.sh
+```
