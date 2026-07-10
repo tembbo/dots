@@ -6,7 +6,7 @@ These are my personal dotfiles. I've tried to keep things fairly straightforward
 
 ## Setup
 
-The bootstrap script installs stow, clones/updates the repository and creates symlinks for the configuration files in `~/.config`. This will not install the configured programs.
+The bootstrap script installs brew and stow (if not already installed), clones/updates the repository and creates symlinks for the configuration files in `~/.config`. It does not install the programs configured by these dotfiles.
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/tembbo/dots/main/bootstrap.sh | bash
