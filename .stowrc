@@ -1,4 +1,4 @@
 --target=~/.config
 --ignore=.DS_Store
 --ignore=.stowrc
---igonre=.github
+--ignore=.github
