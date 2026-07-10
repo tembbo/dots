@@ -12,8 +12,8 @@ The bootstrap script installs stow, clones/updates the repository and creates sy
 curl -fsSL https://raw.githubusercontent.com/tembbo/dots/main/bootstrap.sh | bash
 ```
 
-You can also run the script locally:
+You can also run the script locally after cloning:
 
 ```sh
-bash scripts/bootstrap.sh
+bash bootstrap.sh
 ```
