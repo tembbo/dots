@@ -15,5 +15,5 @@ curl -fsSL https://raw.githubusercontent.com/tembbo/dots/main/bootstrap.sh | bas
 You can also run the script locally after cloning:
 
 ```sh
-bash bootstrap.sh
+./bootstrap.sh
 ```
