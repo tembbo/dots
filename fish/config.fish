@@ -21,4 +21,4 @@ set -x GPG_TTY (tty)
 bind -M insert ctrl-f accept-autosuggestion
 
 # opencode
-fish_add_path /Users/emil/.opencode/bin
+fish_add_path $HOME/.opencode/bin
