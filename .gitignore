@@ -2,5 +2,7 @@
 fish/fish_variables
 
 pi/auth.json
+pi/settings.json
+pi/trust.json
 pi/sessions/
 pi/bin/
