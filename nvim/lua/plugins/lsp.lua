@@ -23,6 +23,41 @@ return {
 	},
 
 	config = function()
+		-- Show inline diagnostic text at the end of the line.
+		local diagnostic_icons = {
+			[vim.diagnostic.severity.ERROR] = " ",
+			[vim.diagnostic.severity.WARN] = " ",
+			[vim.diagnostic.severity.INFO] = " ",
+			[vim.diagnostic.severity.HINT] = "󰌵 ",
+		}
+
+		vim.diagnostic.config({
+			severity_sort = true,
+			float = {
+				border = "rounded",
+				source = "if_many",
+			},
+			underline = true,
+			update_in_insert = false,
+			signs = {
+				text = {
+					[vim.diagnostic.severity.ERROR] = diagnostic_icons[vim.diagnostic.severity.ERROR],
+					[vim.diagnostic.severity.WARN] = diagnostic_icons[vim.diagnostic.severity.WARN],
+					[vim.diagnostic.severity.INFO] = diagnostic_icons[vim.diagnostic.severity.INFO],
+					[vim.diagnostic.severity.HINT] = diagnostic_icons[vim.diagnostic.severity.HINT],
+				},
+			},
+			virtual_text = {
+				spacing = 4,
+				source = "if_many",
+				-- Per-severity icon so multiple diagnostics on one line
+				-- don't just look like "● ● ●".
+				prefix = function(diagnostic)
+					return diagnostic_icons[diagnostic.severity] or "● "
+				end,
+			},
+		})
+
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 		vim.api.nvim_create_autocmd("LspAttach", {
