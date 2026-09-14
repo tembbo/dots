@@ -119,6 +119,7 @@ return {
 		})
 
 		local servers = {
+			ruff = {},
 			ts_ls = {},
 			zls = {},
 			tailwindcss = {},
@@ -174,6 +175,7 @@ return {
 			"stylua",
 			"prettier",
 			"shfmt",
+			"svelte",
 		})
 
 		require("mason-tool-installer").setup({

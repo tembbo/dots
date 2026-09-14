@@ -28,6 +28,7 @@ return {
 			sh = { "shfmt" },
 			bash = { "shfmt" },
 			astro = { "prettier" },
+			python = { "ruff_format", "ruff_organize_imports" },
 		},
 		format_on_save = function(buffer)
 			if vim.bo[buffer].buftype ~= "" then
